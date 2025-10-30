@@ -7,6 +7,9 @@ const EditOrganizationDetailsForm=()=>{
           <h2 className="text-3xl md:text-3xl font-bold text-center mb-2">
             Jai Laxmi Narayan Seva Trust
           </h2>
+          <span className="text-xs font-medium px-3 py-1.5 bg-green-100 text-green-700 rounded-full">
+                Active Organization
+              </span>
           
 
           <form
@@ -21,7 +24,7 @@ const EditOrganizationDetailsForm=()=>{
             //   value={formData.companyWebsite}
             //   onChange={handleChange}
               required
-            />
+            /> 
             <InputField
               label="Organization Name"
               name="organizationName"
