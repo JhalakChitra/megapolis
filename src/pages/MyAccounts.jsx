@@ -1,18 +1,23 @@
-import Header from "../components/Header";
+import { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import StatsPanel from "../components/StatsPanel";
 import AccountTable from "../components/AccountTable";
+import DashboardHeader from "../components/DashboardHeader";
 
 const MyAccounts = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Sidebar */}
-      <Sidebar />
+      {isSidebarOpen && (
+        <Sidebar />
+      )}
 
       {/* Main content */}
       <div className="flex-1 flex flex-col">
-        {/* Header */}
-        <Header />
+        {/* Header with toggle */}
+        <DashboardHeader onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
 
         {/* Breadcrumb */}
         <div className="p-4 text-sm text-gray-500">
@@ -21,15 +26,15 @@ const MyAccounts = () => {
 
         {/* Page Content */}
         <div className="flex flex-col lg:flex-row gap-4 px-4">
-          {/* Left Side - Map & Info */}
           <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm">
-            <h2 className="text-xl font-semibold mb-4">AI-Enhanced Geospatial Intelligence</h2>
+            <h2 className="text-xl font-semibold mb-4">
+              AI-Enhanced Geospatial Intelligence
+            </h2>
             <div className="bg-gray-100 rounded-xl h-64 flex items-center justify-center">
               🌍 Map visualization area
             </div>
           </div>
 
-          {/* Right Side - Stats Panel */}
           <StatsPanel />
         </div>
 

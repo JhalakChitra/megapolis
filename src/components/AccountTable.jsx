@@ -25,7 +25,7 @@ export default function AccountTable() {
   ];
 
   return (
-    <div className="bg-white rounded-xl border p-4 mt-6 shadow-sm overflow-x-auto">
+    <div className="bg-white rounded-xl  p-4 mt-6 shadow-sm overflow-x-auto">
       <div className="flex justify-between items-center mb-4">
         <input
           type="text"
@@ -33,8 +33,8 @@ export default function AccountTable() {
           className="border rounded-lg px-4 py-2 w-64 text-sm"
         />
         <div className="flex gap-2">
-          <button className="border px-3 py-2 rounded-lg text-sm">All Accounts</button>
-          <button className="border px-3 py-2 rounded-lg text-sm">Actions</button>
+          <button className=" bg-gray-100 px-3 py-2 rounded-lg text-sm">All Accounts</button>
+          <button className="bg-gray-100 px-3 py-2 rounded-lg text-sm">Actions</button>
         </div>
       </div>
 
