@@ -1,3 +1,5 @@
+import InputField from "./InputField";
+
 const CreateOrganizationForm=()=>{
     return(
           <div className="flex justify-center items-center flex-grow p-4 md:p-6">
@@ -15,57 +17,52 @@ const CreateOrganizationForm=()=>{
           className="space-y-6">
           {/* Row 1 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <input
+            <InputField
               label="Company Website"
               name="companyWebsite"
               placeholder="xyz.com"
             //   value={formData.companyWebsite}
             //   onChange={handleChange}
               required
-              className="bg-white p-2"
             />
-            <input
+            <InputField
               label="Organization Name"
               name="organizationName"
               placeholder="Megapolis"
             //   value={formData.organizationName}
             //   onChange={handleChange}
               required
-                            className="bg-white p-2"
 
             />
           </div>
 
           {/* Row 2 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <input
+            <InputField
               label="Address 1"
               name="address1"
               placeholder="45, Street"
             //   value={formData.address1}
             //   onChange={handleChange}
-                          className="bg-white p-2"
 
               required
             />
-            <input
+            <InputField
               label="Address 2"
               name="address2"
               placeholder="Address (optional)"
             //   value={formData.address2}
             //   onChange={handleChange}
-                          className="bg-white p-2"
 
             />
           </div>
 
           {/* Row 3 - City, State, Zip */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            <input
+            <InputField
               label="City"
               name="city"
               placeholder="City name"
-                            className="bg-white p-2"
 
             //   value={formData.city}
             //   onChange={handleChange}
@@ -88,21 +85,20 @@ const CreateOrganizationForm=()=>{
                 <option value="FL">Florida</option>
               </select>
             </div>
-            <input
+            <InputField
               label="Zip Code"
               name="zipCode"
               placeholder="Postal code"
             //   value={formData.zipCode}
             //   onChange={handleChange}
               required
-                            className="bg-white p-2"
 
             />
           </div>
 
           {/* Row 4 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <input
+            <InputField
               label="Email Address"
               type="email"
               name="email"
@@ -110,17 +106,15 @@ const CreateOrganizationForm=()=>{
             //   value={formData.email}
             //   onChange={handleChange}
               required
-                            className="bg-white p-2"
 
             />
-            <input
+            <InputField
               label="Phone"
               type="tel"
               name="phone"
               placeholder="(555) 123 4567"
             //   value={formData.phone}
             //   onChange={handleChange}
-                          className="bg-white p-2"
 
             />
           </div>
