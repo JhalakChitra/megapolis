@@ -6,7 +6,7 @@ import ResetPassword from './components/ResetPassword';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CreateOrganization from './pages/CreateOrganization';
 import OrganizationDetails from './pages/OrganizationDetails';
-
+import EditOrganizationDetails from './pages/EditOrganizationDetails';
 
 function App() {
 
@@ -18,8 +18,9 @@ function App() {
   //       <Route path='/reset-Password' element={<ResetPassword/>}/>
   //     </Routes>
   //   </BrowserRouter>
-  <OrganizationDetails/>
+  // <OrganizationDetails/>
   // <CreateOrganization/>
+  <EditOrganizationDetails/>
 
   )
 }
