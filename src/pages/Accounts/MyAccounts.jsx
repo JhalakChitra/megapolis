@@ -1,9 +1,10 @@
 import { useState } from "react";
-import Sidebar from "../components/Sidebar";
-import StatsPanel from "../components/StatsPanel";
-import AccountTable from "../components/AccountTable";
-import DashboardHeader from "../components/DashboardHeader";
-import MapView from "../components/MapView";
+import Sidebar from "../../components/Accounts/Sidebar";
+import StatsPanel from "../../components/Accounts/StatsPanel";
+// import AccountTable from "../components/AccountTable";
+import DashboardHeader from "../../components/DashboardHeader";
+import MapView from "../../components/Accounts/MapView";
+import AccountTable from "../../components/Accounts/AccountTable";
 
 const MyAccounts = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
