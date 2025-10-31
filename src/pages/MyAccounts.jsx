@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar";
 import StatsPanel from "../components/StatsPanel";
 import AccountTable from "../components/AccountTable";
 import DashboardHeader from "../components/DashboardHeader";
+import MapView from "../components/MapView";
 
 const MyAccounts = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -31,7 +32,7 @@ const MyAccounts = () => {
               AI-Enhanced Geospatial Intelligence
             </h2>
             <div className="bg-gray-100 rounded-xl h-64 flex items-center justify-center">
-              🌍 Map visualization area
+              <MapView />
             </div>
           </div>
 
