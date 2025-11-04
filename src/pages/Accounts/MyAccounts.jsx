@@ -29,6 +29,7 @@ const MyAccounts = () => {
         {/* Page Content */}
         <div className="flex flex-col lg:flex-row gap-4 px-4">
           <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm">
+            <h1>My Account</h1>
             <h2 className="text-xl font-semibold mb-4">
               AI-Enhanced Geospatial Intelligence
             </h2>
