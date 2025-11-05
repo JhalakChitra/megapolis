@@ -5,8 +5,10 @@ import StatsPanel from "../../components/Accounts/StatsPanel";
 import DashboardHeader from "../../components/DashboardHeader";
 import MapView from "../../components/Accounts/MapView";
 import AccountTable from "../../components/Accounts/AccountTable";
+import MyAccountsHeader from "../../components/Accounts/MyAccountsHeader";
 
 const MyAccounts = () => {
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   return (
@@ -22,14 +24,13 @@ const MyAccounts = () => {
         <DashboardHeader onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
 
         {/* Breadcrumb */}
-        <div className="p-4 text-sm text-gray-500">
+        {/* <div className="p-4 text-sm text-gray-500">
           Dashboard / <span className="font-semibold text-gray-700">Organization Details</span>
-        </div>
-
+        </div> */}
+                    <MyAccountsHeader/>
         {/* Page Content */}
         <div className="flex flex-col lg:flex-row gap-4 px-4">
           <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm">
-            <h1>My Account</h1>
             <h2 className="text-xl font-semibold mb-4">
               AI-Enhanced Geospatial Intelligence
             </h2>

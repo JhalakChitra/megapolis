@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { X } from "lucide-react"; // for close icon
 
+
 const CreateNewAccountModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
     website: "",
@@ -31,8 +32,8 @@ const CreateNewAccountModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl shadow-xl w-full max-w-2xl p-6 relative overflow-y-auto max-h-[90vh]">
+    <div className="fixed inset-0 bg-gray-500/40 bg-opacity-40 flex items-center justify-center z-[9999] p-4">
+      <div className="bg-white mt-12 rounded-2xl shadow-xl w-full max-w-2xl p-5 relative overflow-y-auto max-h-[90vh]">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -199,7 +200,7 @@ const CreateNewAccountModal = ({ isOpen, onClose }) => {
             </button>
             <button
               type="submit"
-              className="px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800"
+              className="px-4 py-2 bg-[#0A0E3F] text-white rounded-lg hover:bg-[#12185f]"
             >
               Create Account
             </button>
