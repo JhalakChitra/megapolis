@@ -8,7 +8,8 @@ import CreateOrganization from './pages/CreateOrganization';
 import OrganizationDetails from './pages/OrganizationDetails';
 import EditOrganizationDetails from './pages/EditOrganizationDetails';
 // import MyAccounts from './pages/Accounts/MyAccounts';
-import AccountOverview from './pages/Accounts/AccountsOverview';
+import Overview from './pages/Accounts/Overview';
+import AccountsDashboard from './pages/Accounts/AccountsDashboard';
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
   // <OrganizationDetails/>
   // <CreateOrganization/>
   // <EditOrganizationDetails/>
-  <AccountOverview/>
+  <AccountsDashboard/>
 
   )
 }

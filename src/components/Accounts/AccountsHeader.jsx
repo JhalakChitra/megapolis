@@ -1,7 +1,7 @@
 
 
 
-const OverviewHeader = () => {
+const AccountsHeader = () => {
 
   return (
     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full  p-4 ">
@@ -20,4 +20,4 @@ const OverviewHeader = () => {
   );
 };
 
-export default OverviewHeader;
+export default AccountsHeader;

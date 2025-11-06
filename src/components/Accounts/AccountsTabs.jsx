@@ -1,5 +1,12 @@
 import { useState } from "react";
-import AccountOverview from "../../pages/Accounts/AccountsOverview";
+import Overview from "../../pages/Accounts/Overview";
+import Contacts from "../../pages/Accounts/Contacts";
+import Team from "../../pages/Accounts/Team";
+import Opportunities from "../../pages/Accounts/Opportunities";
+import Experience from "../../pages/Accounts/Experience";
+import Performance from "../../pages/Accounts/Performance";
+import Notes from "../../pages/Accounts/Notes";
+import Financial from "../../pages/Accounts/Financial";
 
 const AccountsTabs = () => {
   // currentTab stores the active tab index or name
@@ -20,31 +27,41 @@ const AccountsTabs = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-4">
+    <div className="w-full max-w-9xl mx-auto p-4">
       {/* Tabs Header */}
       <div className="flex border-b border-gray-200">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => setCurrentTab(tab.id)}
-            className={`px-4 py-2 text-sm font-medium rounded-sm transition
-              ${
-                currentTab === tab.id
-                  ? "bg-[#0A0E3F] text-white"
-                  : "text-gray-600 hover:text-blue-600"
-              }`}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
+  {tabs.map((tab) => (
+    <button
+      key={tab.id}
+      onClick={() => setCurrentTab(tab.id)}
+      className={`flex-1 text-center px-4 py-2 text-sm font-medium transition
+        ${
+          currentTab === tab.id
+            ? "bg-[#0A0E3F] text-white rounded-sm"
+            : "text-gray-600 hover:text-blue-600"
+        }`}
+    >
+      {tab.label}
+    </button>
+  ))}
+</div>
+
 
       {/* Tabs Content */}
           
-         {currentTab === "Overview" && <AccountOverview />}
-        {/* {currentTab === "applications" && <Applications />} */}
-         {/* {currentTab === "profile" && <Profile />} */}
+         {currentTab === "Overview" && <Overview />}
+         {currentTab === "Contacts" && <Contacts />}
+         {currentTab === "Team" && <Team />}
+         {currentTab === "Opportunities" && <Opportunities />}
+         {currentTab === "Experience" && <Experience />}
+         {currentTab === "Performance" && <Performance />}
+         {currentTab === "Notes" && <Notes />}
+         {currentTab === "Financial" && <Financial />}
 
+
+
+
+     
 
     </div>
   );
