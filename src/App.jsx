@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CreateOrganization from './pages/CreateOrganization';
 import OrganizationDetails from './pages/OrganizationDetails';
 import EditOrganizationDetails from './pages/EditOrganizationDetails';
-import MyAccounts from './pages/Accounts/MyAccounts';
+// import MyAccounts from './pages/Accounts/MyAccounts';
+import AccountOverview from './pages/Accounts/AccountsOverview';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
   // <OrganizationDetails/>
   // <CreateOrganization/>
   // <EditOrganizationDetails/>
-  <MyAccounts/>
+  <AccountOverview/>
 
   )
 }
