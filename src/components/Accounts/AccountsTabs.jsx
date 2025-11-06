@@ -7,8 +7,16 @@ const AccountsTabs = () => {
 
   const tabs = [
     { id: "Overview", label: "Overview" },
-    { id: "applications", label: "My Applications" },
-    { id: "profile", label: "Profile" },
+    { id: "Contacts", label: "Contacts" },
+    { id: "Team", label: "Team" },
+       { id: "Opportunities", label: "Opportunities" },
+              { id: "Experience", label: "Experience" },
+                            { id: "Performance", label: "Performance" },
+              { id: "Notes", label: "Notes" },
+              { id: "Financial", label: "Financial" },
+
+
+
   ];
 
   return (
@@ -19,7 +27,7 @@ const AccountsTabs = () => {
           <button
             key={tab.id}
             onClick={() => setCurrentTab(tab.id)}
-            className={`px-4 py-2 text-sm font-medium rounded-t-lg transition
+            className={`px-4 py-2 text-sm font-medium rounded-sm transition
               ${
                 currentTab === tab.id
                   ? "bg-[#0A0E3F] text-white"
