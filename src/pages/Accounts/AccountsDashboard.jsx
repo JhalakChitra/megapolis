@@ -19,14 +19,14 @@ const AccountsDashboard = () => {
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Sidebar */}
-      {isSidebarOpen && (
+      {/* {isSidebarOpen && (
         <Sidebar />
-      )}
+      )} */}
 
       {/* Main content */}
       <div className="flex-1 flex flex-col">
         {/* Header with toggle */}
-        <DashboardHeader onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
+        {/* <DashboardHeader onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} /> */}
 
         {/* Breadcrumb */}
         {/* <div className="p-4 text-sm text-gray-500">

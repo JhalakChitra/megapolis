@@ -10,6 +10,7 @@ import EditOrganizationDetails from './pages/EditOrganizationDetails';
 // import MyAccounts from './pages/Accounts/MyAccounts';
 import Overview from './pages/Accounts/Overview';
 import AccountsDashboard from './pages/Accounts/AccountsDashboard';
+import MenuDashboard from './pages/MenuDashboard';
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
   // <OrganizationDetails/>
   // <CreateOrganization/>
   // <EditOrganizationDetails/>
-  <AccountsDashboard/>
+  <MenuDashboard/>
 
   )
 }
