@@ -51,7 +51,7 @@ const Sidebar = ({ isOpen, setIsOpen, selected, setSelected }) => {
                 }}
                 className={`flex items-center gap-3 px-3 py-2 rounded-lg w-full text-left transition-colors hover:bg-gray-100 ${
                   selected === name
-                    ? "bg-blue-50 text-blue-600 font-semibold"
+                    ? "bg-blue-50 text-[#0A0E3F] font-semibold"
                     : ""
                 }`}
               >

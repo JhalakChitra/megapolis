@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../../../Opportunities/Opportunities Preview/Button";
 const Header = () => {
   return (<>
          <div className=" pb-2"><a className="text-gray-500">Dashboard -</a> <a className="text-gray-900 font-semibold"> Opportunities </a></div>   
