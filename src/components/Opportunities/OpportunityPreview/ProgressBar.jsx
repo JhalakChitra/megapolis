@@ -4,7 +4,7 @@ const ProgressBar = ({ progress }) => {
       <p className="text-gray-600 mb-2">AI Analysis in Progress</p>
       <div className="w-full bg-gray-200 rounded-full h-2.5">
         <div
-          className="bg-indigo-500 h-2.5 rounded-full transition-all"
+          className="bg-[#0A0E3F] h-2.5 rounded-full transition-all"
           style={{ width: `${progress}%` }}
         ></div>
       </div>
