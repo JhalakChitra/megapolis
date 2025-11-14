@@ -11,6 +11,7 @@ import EditOrganizationDetails from './pages/EditOrganizationDetails';
 import Overview from './pages/Accounts/Overview';
 import AccountsDashboard from './pages/Accounts/AccountsDashboard';
 import MenuDashboard from './pages/MenuDashboard';
+import OpportunitiesDashboard from './pages/Opportunities/OpportunitiesDashboard/OpportunitiesDashboard';
 
 function App() {
 

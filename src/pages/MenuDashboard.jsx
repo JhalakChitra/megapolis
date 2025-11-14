@@ -8,6 +8,7 @@ import AccountsTabs from "../components/Accounts/AccountsTabs";
 import Sidebar from "../components/Accounts/Sidebar";
 import AccountsDashboard from "./Accounts/AccountsDashboard";
 import OpportunityPreviewPage from "./Opportunities/OpportunityPreview/OpportunityPreviewPage";
+import OpportunitiesDashboard from "./Opportunities/OpportunitiesDashboard/OpportunitiesDashboard";
 
 const MenuDashboard = () => {
 
@@ -26,7 +27,7 @@ const MenuDashboard = () => {
         return <ProposalsPage />;
       case "Opportunities":
       default:
-        return <OpportunityPreviewPage />;
+        return <OpportunitiesDashboard />;
     }
   };
 
