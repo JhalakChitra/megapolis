@@ -10,6 +10,15 @@ export default function SourceOpportunitiesTable() {
       value: "$2.4M",
       deadline: "2025-04-25",
       desc: "Major BRT implementation project..."
+    },
+    {
+      name: "Metro Transit Expansion",
+      state: "Arizona",
+      sector: "Transportation",
+      match: "89%",
+      value: "$2.4M",
+      deadline: "2025-04-25",
+      desc: "Major BRT implementation project..."
     }
   ];
 

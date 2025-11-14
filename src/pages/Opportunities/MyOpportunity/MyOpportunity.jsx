@@ -1,6 +1,6 @@
 const MyOpportunity=()=>{
      return(<>
-    MyOpportunity 
+    My Opportunity coming soon!
      </>)
 }
 

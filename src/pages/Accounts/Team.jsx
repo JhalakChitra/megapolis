@@ -1,6 +1,6 @@
 const Team=()=>{
     return (<>
-     team
+     team coming soon!
     </>)
 }
 

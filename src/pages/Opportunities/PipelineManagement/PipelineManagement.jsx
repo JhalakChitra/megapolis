@@ -1,6 +1,6 @@
 const PipelineManagement=()=>{
      return(<>
-     PipelineManagement
+     Pipeline Management coming soon!
      </>)
 }
 

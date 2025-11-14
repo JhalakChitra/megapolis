@@ -1,6 +1,6 @@
 const Performance=()=>{
     return(<>
-    Performance
+    Performance coming soon!
     </>)
 }
 

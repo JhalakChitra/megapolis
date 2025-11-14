@@ -1,6 +1,6 @@
 const Financial=()=>{
     return(<>
-    Financial
+    Financial coming soon!
     </>)
 }
 
