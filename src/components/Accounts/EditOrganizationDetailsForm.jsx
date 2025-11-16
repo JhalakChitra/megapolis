@@ -1,5 +1,4 @@
-import InputField from "./InputField";
-
+import InputField from "../InputField";
 const EditOrganizationDetailsForm=()=>{
     return(
        <div className="flex justify-center items-center flex-grow p-4 md:p-6">

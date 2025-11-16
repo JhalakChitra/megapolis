@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const ForgotPasswordForm = () => {
   return ( <div className="bg-[#F9F9F9] p-5">
@@ -35,12 +35,12 @@ const ForgotPasswordForm = () => {
               </a>
             </div>
 
-            <Link to={"/"}><button
+            <button
               type="submit"
               className="w-full bg-[#161950] text-white py-2 rounded-lg hover:bg-[#1a1a6e] transition cursor-pointer"
             >
               Sign In
-            </button>  </Link>
+            </button>  
 
             <p className="text-sm text-center text-gray-500">
               Don’t have an account?{" "}

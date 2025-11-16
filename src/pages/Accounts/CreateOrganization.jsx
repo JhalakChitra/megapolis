@@ -1,7 +1,6 @@
 // import { useState } from "react";
-import Header from "../components/Header";
-import CreateOrganizationForm from "../components/CreateOrganizationForm";
-
+import Header from "../../components/Header";
+import CreateOrganizationForm from "../../components/Accounts/CreateOrganizationForm";
 const CreateOrganization=()=> {
 //   const [formData, setFormData] = useState({
 //     companyWebsite: "",

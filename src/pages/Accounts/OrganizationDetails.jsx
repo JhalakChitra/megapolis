@@ -1,6 +1,6 @@
 // import { useState } from "react";
-import Header from "../components/Header";
-import OrganizationDetailsCard from "../components/OrganizationDetailsCard";
+import Header from "../../components/Header";
+import OrganizationDetailsCard from "../../components/Accounts/OrganizationDetailsCard";
 const OrganizationDetails=()=> {
 
   return (

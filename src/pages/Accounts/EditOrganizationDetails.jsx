@@ -1,6 +1,6 @@
 // import { useState } from "react";
-import Header from "../components/Header";
-import EditOrganizationDetailsForm from "../components/EditOrganizationDetailsForm";
+import Header from "../../components/Header";
+import EditOrganizationDetailsForm from "../../components/Accounts/EditOrganizationDetailsForm";
 
 const EditOrganizationDetails=()=> {
 

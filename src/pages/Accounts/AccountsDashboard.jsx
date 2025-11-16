@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Sidebar from "../../components/Accounts/Sidebar";
+import Sidebar from "../../components/Sidebar";
 import DashboardHeader from "../../components/DashboardHeader";
 import AccountsHeader from "../../components/Accounts/AccountsHeader";
 import AccountOverviewForm from "../../components/Accounts/Overview/AccountOverviewForm";

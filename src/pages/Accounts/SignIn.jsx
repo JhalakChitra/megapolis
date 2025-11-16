@@ -1,5 +1,5 @@
-import SignInForm from "../components/SignInForm";
-import RightSidePortion from "../components/RightSidePortion";
+import SignInForm from "../../components/Accounts/SignInForm";
+import RightSidePortion from "../../components/Accounts/RightSidePortion";
 
 
 const SignIn = () => {

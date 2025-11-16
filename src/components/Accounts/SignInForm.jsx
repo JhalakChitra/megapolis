@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 const SignInForm = () => {
@@ -30,7 +30,7 @@ const SignInForm = () => {
                         <input type="checkbox" className="mr-2" />
                         Keep me logged in
                     </label>
-                    <Link to="/forgot-password" className="text-sm text-blue-600 hover:underline">Forgot password?</Link>
+                    <a className="text-sm text-blue-600 hover:underline">Forgot password?</a>
                 </div>
 
                 <button

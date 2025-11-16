@@ -5,8 +5,9 @@ import AccountsHeader from "../components/Accounts/AccountsHeader";
 // import OverviewRecentActivity from "../../components/Accounts/Overview/OverviewRecentActivity";
 // import OverviewStats from "../../components/Accounts/Overview/OverviewStats";
 import AccountsTabs from "../components/Accounts/AccountsTabs";
-import Sidebar from "../components/Accounts/Sidebar";
+import Sidebar from "../components/Sidebar";
 import AccountsDashboard from "./Accounts/AccountsDashboard";
+import MyAccounts from "./Accounts/MyAccounts";
 import OpportunityPreviewPage from "./Opportunities/OpportunityPreview/OpportunityPreviewPage";
 import OpportunitiesDashboard from "./Opportunities/OpportunitiesDashboard/OpportunitiesDashboard";
 

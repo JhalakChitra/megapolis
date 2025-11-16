@@ -1,5 +1,5 @@
-import ForgotPasswordForm from "../components/ForgotPasswordForm";
-import RightSidePortion from "../components/RightSidePortion";
+import ForgotPasswordForm from "../../components/Accounts/ForgotPasswordForm";
+import RightSidePortion from "../../components/Accounts/RightSidePortion";
 import { Link } from "react-router-dom";
 
 
@@ -10,9 +10,9 @@ const ForgotPassword = () => {
             {/* Left side - Form */}
             <div className="w-full md:w-1/2 flex items-center justify-center bg-white">
                 <div className="w-full max-w-md p-8 rounded-md">
-                   <Link to={"/"}> <button className="text-sm text-gray-600 cursor-pointer mb-6 inline-flex items-center">
+                    <button className="text-sm text-gray-600 cursor-pointer mb-6 inline-flex items-center">
                         <span className="mr-2">&larr; </span> Back to Sign In
-                    </button> </Link>
+                    </button> 
 
                     <ForgotPasswordForm />
                 </div>
