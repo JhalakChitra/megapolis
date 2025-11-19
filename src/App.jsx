@@ -17,18 +17,20 @@ import OpportunitiesDashboard from './pages/Opportunities/OpportunitiesDashboard
 function App() {
 
   return (
-  //  <BrowserRouter>
+   <BrowserRouter>
   //     <Routes>
-  //       <Route path="/" element={<SignIn />} />
+  //       <Route path="/SignIn" element={<SignIn />} />
   //       <Route path="/forgot-password" element={<ForgotPassword />} />
   //       <Route path='/reset-Password' element={<ResetPassword/>}/>
+  //       <Route path='/reset-Password' element={<ResetPassword/>}/>
+  //       <Route path='/CreateOrganization' element={<CreateOrganization/>}/>
+  //       <Route path='/EditOrganizationDetails' element={<EditOrganizationDetails/>}/>
+
+
   //     </Routes>
   //   </BrowserRouter>
-  <SignIn/>
-  // <CreateOrganization/>
-  // <EditOrganizationDetails/>
-  // <ForgotPassword/>
-
+  
+  
   )
 }
 
