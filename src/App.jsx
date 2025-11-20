@@ -18,17 +18,14 @@ function App() {
 
   return (
    <BrowserRouter>
-  //     <Routes>
-  //       <Route path="/SignIn" element={<SignIn />} />
-  //       <Route path="/forgot-password" element={<ForgotPassword />} />
-  //       <Route path='/reset-Password' element={<ResetPassword/>}/>
-  //       <Route path='/reset-Password' element={<ResetPassword/>}/>
-  //       <Route path='/CreateOrganization' element={<CreateOrganization/>}/>
-  //       <Route path='/EditOrganizationDetails' element={<EditOrganizationDetails/>}/>
-
-
-  //     </Routes>
-  //   </BrowserRouter>
+      <Routes>
+         <Route path="/SignIn" element={<SignIn />} />
+         <Route path="/forgot-password" element={<ForgotPassword />} />
+         <Route path='/reset-Password' element={<ResetPassword/>}/>
+         <Route path='/CreateOrganization' element={<CreateOrganization/>}/>
+         <Route path='/EditOrganizationDetails' element={<EditOrganizationDetails/>}/>
+       </Routes>
+     </BrowserRouter>
   
   
   )
