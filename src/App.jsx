@@ -2,7 +2,8 @@
 import './App.css'
 import SignIn from './pages/Accounts/SignIn'
 import ForgotPassword from './pages/Accounts/ForgotPassword'
-import ResetPassword from './components/Accounts/ResetPassword';
+import ResetPasswordPage from './pages/Accounts/ResetPasswordPage';
+import ResetPassword from './components/Accounts/ResetPasswordModal';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CreateOrganization from './pages/Accounts/CreateOrganization';
 // import OrganizationDetails from './pages/Accounts/OrganizationDetails';
@@ -29,7 +30,7 @@ function App() {
 
          <Route path="/SignIn" element={<SignIn />} />
          <Route path="/forgot-password" element={<ForgotPassword />} />
-         <Route path='/reset-Password' element={<ResetPassword/>}/>
+         <Route path="/reset-password" element={<ResetPasswordPage />} />
          <Route path='/CreateOrganization' element={<CreateOrganization/>}/>
          <Route path='/EditOrganizationDetails' element={<EditOrganizationDetails/>}/>
        </Routes>

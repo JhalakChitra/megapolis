@@ -1,4 +1,37 @@
-const ResetPassword = () => {
+import { useState } from "react";
+import axios from "axios";
+
+
+const ResetPasswordModal = (token) => {
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [msg, setMsg] = useState("");
+
+
+   const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (newPassword !== confirmPassword) {
+      setMsg("Passwords do not match");
+      return;
+    }
+
+    try {
+      await axios.post("http://localhost:8000/auth/reset-password", {
+        token,
+        new_password: newPassword,
+      });
+
+      setMsg("Password reset successful!");
+    } catch (err) {
+      setMsg("Link expired or invalid.");
+    }
+  };
+
+
+
+
+
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
             <div className="bg-white p-10 rounded-[17px] shadow-lg w-full max-w-md relative">
@@ -38,6 +71,11 @@ const ResetPassword = () => {
                     >
                         Save Your Password
                     </button>
+
+                   {msg && (
+            <p className="mt-3 text-center text-sm text-red-500">{msg}</p>
+          )}
+
                 </form>
 
                 {/* <button
@@ -52,4 +90,4 @@ const ResetPassword = () => {
 }
 
 
-export default ResetPassword;
+export default ResetPasswordModal;
