@@ -19,6 +19,14 @@ function App() {
   return (
    <BrowserRouter>
       <Routes>
+
+           {/* DEFAULT ROUTE */}
+        <Route path="/" element={<SignIn />} />
+
+
+
+                   {/* ACCOUNT ROUTES */}
+
          <Route path="/SignIn" element={<SignIn />} />
          <Route path="/forgot-password" element={<ForgotPassword />} />
          <Route path='/reset-Password' element={<ResetPassword/>}/>

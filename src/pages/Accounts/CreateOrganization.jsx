@@ -34,7 +34,7 @@ const CreateOrganization=()=> {
   <nav className="text-sm text-gray-500">
     <ul className="flex items-center space-x-2">
       <li>
-        <a href="" className="text-gray-400 hover:text-gray-600 font-medium">
+        <a href="/SignIn" className="text-gray-400 hover:text-gray-600 font-medium">
           Sign-in
         </a>
       </li>

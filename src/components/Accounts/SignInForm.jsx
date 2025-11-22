@@ -66,12 +66,12 @@ const SignInForm = () => {
                         <input type="checkbox" className="mr-2" />
                         Keep me logged in
                     </label>
-                    <a className="text-sm text-blue-600 hover:underline">Forgot password?</a>
+                    <a href="/forgot-password" className="text-sm text-blue-600 hover:underline cursor-pointer">Forgot password?</a>
                 </div>
 
                 <button
                     type="submit"
-                    className="w-full bg-[#161950] hover:bg-[#1a1a6e] text-white py-2 rounded-md transition"
+                    className="w-full bg-[#161950] hover:bg-[#1a1a6e] cursor-pointer text-white py-2 rounded-md transition"
                 >
                     Sign In
                 </button>
