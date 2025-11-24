@@ -1,21 +1,25 @@
-/* ✅ Reusable Input Component */
-function InputField({ label, name, type = "text", value, onChange, placeholder, required }) {
-  return (
-    <div>
-      <label className="block text-sm font-medium mb-1">
-        {label}
+// Placeholder for the InputField component (assuming it's a simple text input wrapper)
+// FIX: Restored the complete JSX structure for the InputField component.
+const InputField = ({ label, name, value, onChange, placeholder, required, type = "text", badge }) => (
+  <div className="space-y-1">
+    <label htmlFor={name} className="block text-sm font-medium text-gray-700">
+      <div className="flex items-center space-x-2">
+        <span>{label}</span>
         {required && <span className="text-red-500">*</span>}
-      </label>
-      <input
-        type={type}
-        name={name}
-        value={value}
-        onChange={onChange}
-        placeholder={placeholder}
-        className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm md:text-base focus:ring-2 focus:ring-blue-500 outline-none"
-      />
-    </div>
-  );
-}
+        {badge} {/* Render the optional badge here */}
+      </div>
+    </label>
+    <input
+      type={type}
+      id={name}
+      name={name}
+      placeholder={placeholder}
+      value={value}
+      onChange={onChange}
+      required={required}
+      className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none transition duration-150"
+    />
+  </div>
+);
 
 export default InputField;
