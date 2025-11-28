@@ -78,13 +78,13 @@ const AiBadge = (
 
 const CreateOrganizationForm = () => {
   const [formData, setFormData] = useState({
-    companyWebsite: "",
-    organizationName: "",
+    website: "",
+    name: "",
     address1: "",
     address2: "",
     city: "",
     state: "",
-    zipCode: "",
+    zip_code: "",
     email: "",
     phone: "",
   });
@@ -101,7 +101,7 @@ const CreateOrganizationForm = () => {
   // ----------------------------------------------------------
   const handleWebsiteChange = async (e) => {
   const value = e.target.value;
-  setFormData({ ...formData, companyWebsite: value });
+  setFormData({ ...formData, website: value });
 
   if (value.includes(".") && value.length > 5) {
     try {
@@ -135,7 +135,8 @@ const CreateOrganizationForm = () => {
 
       setFormData((prev) => ({
         ...prev,
-        organizationName: data.organizationName || prev.organizationName,
+        name: data.organizationName || prev.name,
+        website: value,
         email: data.email || prev.email,
         phone: data.phone || prev.phone,
 
@@ -146,7 +147,7 @@ const CreateOrganizationForm = () => {
         // Location fields
         city: data.city || prev.city,
         state: finalState || prev.state,
-        zipCode: data.zipCode || prev.zipCode,
+        zip_code: data.zipCode || prev.zip_code,
       }));
 
     } catch (err) {
@@ -156,29 +157,36 @@ const CreateOrganizationForm = () => {
 };
 
 
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
+  const token = localStorage.getItem("token"); // ✅ get the token
 
-  // Submit form
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  try {
+    const response = await fetch("http://localhost:8000/organization/create", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}`, // ✅ send token in header
+      },
+      body: JSON.stringify(formData),
+    });
 
-    try {
-      const response = await fetch("http://localhost:8000/organizations", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-      console.log("Response from backend:", data);
-      alert("Organization created successfully!");
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Failed to create organization");
+    if (!response.ok) {
+      throw new Error("Failed to create organization");
     }
-  };
+
+    const data = await response.json();
+    console.log("Organization Created:", data);
+
+    navigate(`/OrganizationDetails/${data.id}`);
+
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+
 
 
 
@@ -200,9 +208,9 @@ const CreateOrganizationForm = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <InputField
               label="Company Website"
-              name="companyWebsite"
+              name="website"
               placeholder="xyz.com"
-              value={formData.companyWebsite}
+              value={formData.website}
               onChange={handleWebsiteChange}
               required
               badge={AiBadge}
@@ -210,9 +218,9 @@ const CreateOrganizationForm = () => {
             />
             <InputField
               label="Organization Name"
-              name="organizationName"
+              name="name"
               placeholder="Megapolis"
-              value={formData.organizationName}
+              value={formData.name}
               onChange={handleChange}
               required
             />
@@ -300,9 +308,9 @@ const CreateOrganizationForm = () => {
 
             <InputField
               label="Zip Code"
-              name="zipCode"
+              name="zip_code"
               placeholder="Postal code"
-              value={formData.zipCode}
+              value={formData.zip_code}
               onChange={handleChange}
               required
             />

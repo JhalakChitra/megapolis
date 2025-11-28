@@ -13,6 +13,8 @@ import Overview from './pages/Accounts/Overview';
 import AccountsDashboard from './pages/Accounts/AccountsDashboard';
 import MenuDashboard from './pages/MenuDashboard';
 import OpportunitiesDashboard from './pages/Opportunities/OpportunitiesDashboard/OpportunitiesDashboard';
+import OrganizationDetails from './pages/Accounts/OrganizationDetails';
+import SignUp from './pages/Accounts/SignUp';
 
 
 function App() {
@@ -29,9 +31,11 @@ function App() {
                    {/* ACCOUNT ROUTES */}
 
          <Route path="/SignIn" element={<SignIn />} />
+         <Route path="/SignUp" element={<SignUp />} />
          <Route path="/forgot-password" element={<ForgotPassword />} />
          <Route path="/reset-password" element={<ResetPasswordPage />} />
          <Route path='/CreateOrganization' element={<CreateOrganization/>}/>
+         <Route path='/OrganizationDetails' element={<OrganizationDetails/>}/>
          <Route path='/EditOrganizationDetails' element={<EditOrganizationDetails/>}/>
        </Routes>
      </BrowserRouter>

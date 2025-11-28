@@ -8,7 +8,7 @@ const OrganizationDetailsCard=()=> {
   useEffect(() => {
     const fetchOrganization = async () => {
       try {
-        const response = await fetch("http://localhost:8000/organizations/1"); // example: fetch org with id=1
+        const response = await fetch("http://localhost:8000/organization/1"); // example: fetch org with id=1
         const data = await response.json();
         setOrgData(data);
         setLoading(false);
